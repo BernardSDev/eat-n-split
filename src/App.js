@@ -21,14 +21,6 @@ const initialFriends = [
 	},
 ]
 
-function Button({ children, onClick }) {
-	return (
-		<button className="button" onClick={onClick}>
-			{children}
-		</button>
-	)
-}
-
 export default function App() {
 	const [showAddForm, setShowAddFriend] = useState(false)
 
@@ -45,6 +37,14 @@ export default function App() {
 			</div>
 			<FormSplitBill />
 		</div>
+	)
+}
+
+function Button({ children, onClick }) {
+	return (
+		<button className="button" onClick={onClick}>
+			{children}
+		</button>
 	)
 }
 
